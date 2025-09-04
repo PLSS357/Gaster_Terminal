@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terminal Obscurus v4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="matrixRain"></canvas>
+    <div class="terminal" id="termRoot" data-theme="default">
+      <div class="header">
+        <div class="topbar">
+          <div class="brand">SISTEMA OBSCURUS v4.0</div>
+          <span class="chip">CLEARANCE 5 – COSMIC</span>
+          <span class="chip" id="userChip">USER: GUEST</span>
+        </div>
+        <div class="right">
+          <div class="subtle" id="timestamp"></div>
+          <div class="btns">
+            <span class="chip" id="themeBtn" title="Alternar tema">theme</span>
+            <span class="chip" id="matrixBtn" title="Matrix rain">matrix</span>
+            <span class="chip" id="rebootBtn" title="Reiniciar">reboot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="output" id="output"></div>
+
+      <div class="input-line" id="inputLine">
+        <span class="prompt" id="prompt">GUEST@obscurus:~#</span>
+        <input
+          type="text"
+          class="input"
+          id="input"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <span class="cursor">█</span>
+      </div>
+    </div>
+    <div class="crt"></div>
+    <div class="autocomplete" id="ac" style="display: none"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
