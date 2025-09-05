@@ -342,8 +342,16 @@ body {
   line-height: 1;
   font-size: clamp(8px, 1.1vw, 10px);
   text-align: center;
+}
+
+.wingdings {
+  font-family: "Wingdings", cursive;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 20px #fff;
   animation: fadeInSlow 800ms ease-in;
 }
+
 @keyframes fadeInSlow {
   from {
     opacity: 0;
@@ -353,12 +361,6 @@ body {
     opacity: 1;
     transform: scale(1);
   }
-}
-.wingdings {
-  font-family: "Wingdings", cursive;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0 20px #fff;
 }
 .topbar {
   display: flex;
@@ -396,3 +398,4 @@ body {
     max-width: 55vw;
   }
 }
+
